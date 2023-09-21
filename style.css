@@ -1,0 +1,263 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary: #4A55A2
+- Tints:
+#dbddec
+#C5DFF8
+#A0BFE0
+#7895CB
+
+- Shades: 
+#434d92
+#1e2241
+
+- Accents:
+- Greys
+
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#555
+#333
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+
+  /* Does NOT work on Safari */
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "Satoshi", "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  /* color: #efefe8; */
+  color: #f2e9ea;
+  background-color: black;
+}
+
+/* ///// GENERAL ///// */
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: repeat(1fr, 8); */
+  gap: 1rem;
+  padding: 1rem;
+}
+.container-box {
+  background-color: #1a1a1a;
+  padding: 4rem;
+  border-radius: 8rem;
+}
+
+.large-box {
+  height: 72rem;
+  grid-row: span 2;
+}
+.small-box {
+  height: 35.5rem;
+}
+.all-row {
+  height: 35.5rem;
+  grid-column: span 2;
+}
+
+/* ///////// CONTAINERS ////////// */
+
+.name {
+  font-size: 12rem;
+  font-weight: 700;
+  letter-spacing: -0.35rem;
+}
+
+.picture {
+  overflow: hidden;
+  padding: 0;
+}
+.picture-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  image-rendering: auto;
+}
+
+.about-me {
+  background-color: #d1ae8e;
+  color: #4d121a;
+  font-size: 4.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.header {
+  margin-bottom: 3rem;
+}
+.description {
+  color: rgba(77, 18, 26, 0.6);
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+  letter-spacing: 0.04rem;
+}
+.description span {
+  color: #4d121a;
+}
+
+.something-container {
+  font-size: 9.8rem;
+  color: #d1ae8e;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.something-contact-link {
+  transition: all 0.2s;
+}
+.something-contact-link:hover,
+.something-contact-link:active {
+  color: rgba(209, 174, 142, 0.6);
+}
+
+.project {
+  font-size: 4.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.project .header,
+.project .description span {
+  color: #e5e4d8;
+}
+.project .description {
+  color: rgba(229, 228, 216, 0.6);
+}
+
+.play-link-container {
+  font-size: 9.8rem;
+  align-self: center;
+  margin-top: 3rem;
+}
+.play-link:link,
+.play-link:visited {
+  cursor: pointer;
+  text-decoration: none;
+  color: #e5e4d8;
+  transition: all 0.2s;
+}
+.play-link:hover,
+.play-link:active {
+  color: rgba(229, 228, 216, 0.6);
+}
+
+.project-red {
+  background-color: #801e2b;
+}
+
+.contact {
+  background-color: #d1ae8e;
+}
+.contact-container {
+  font-size: 9.8rem;
+  color: #801e2b;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.contact-link:link,
+.contact-link:visited {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+
+  transition: all 0.2s;
+}
+.contact-link:hover,
+.contact-link:active {
+  color: #4d121a;
+}
+
+.footer {
+  font-size: 4.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.footer .header {
+  color: #e5e4d8;
+}
+.footer .description {
+  color: rgba(229, 228, 216, 0.6);
+}
+.footer .description span {
+  color: #801e2b;
+}
