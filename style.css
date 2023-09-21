@@ -330,10 +330,10 @@ body {
 }
 
 /**************************/
-/* BELOW 816px (Tablets) */
+/* BELOW 644px (Tablets) */
 /**************************/
 
-@media (max-width: 51em) {
+@media (max-width: 40.25em) {
   html {
     /* 7.8px / 16px  */
     font-size: 48.75%;
