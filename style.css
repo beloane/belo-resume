@@ -164,12 +164,13 @@ body {
 
 .something-container {
   font-size: 9.8rem;
+  gap: 3rem;
+
   color: #d1ae8e;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
 }
 .something-contact-link {
   transition: all 0.2s;
@@ -260,4 +261,104 @@ body {
 }
 .footer .description span {
   color: #801e2b;
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 6.2px / 16px  */
+    font-size: 38.75%;
+  }
+  .container-box {
+    padding: 2rem;
+    border-radius: 6rem;
+  }
+  .picture {
+    overflow: hidden;
+    padding: 0;
+  }
+  /*
+  .large-box {
+    height: 45.4rem;
+    grid-row: span 2;
+  }
+  .small-box {
+    height: 22.2rem;
+  }
+  .all-row {
+    height: 22.2rem;
+    grid-column: span 2;
+  }
+
+  .name {
+    font-size: 8rem;
+  }
+  
+
+  .about-me,
+  .project {
+    font-size: 3rem;
+    gap: 1.6rem;
+  }
+
+  .header {
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .play-link-container {
+    font-size: 7.4rem;
+    align-self: center;
+    margin-top: 1rem;
+  }
+
+  .something-container,
+  .contact-container {
+    font-size: 7.4rem;
+    gap: 2.4rem;
+  }
+
+  .footer {
+    font-size: 3rem;
+  } */
+}
+
+/**************************/
+/* BELOW 816px (Tablets) */
+/**************************/
+
+@media (max-width: 51em) {
+  html {
+    /* 7.8px / 16px  */
+    font-size: 48.75%;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .container-box {
+    padding: 2rem;
+    border-radius: 4rem;
+  }
+  .picture {
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .large-box {
+    height: 72rem;
+    grid-row: unset;
+  }
+  .small-box {
+    height: 35.5rem;
+  }
+  .all-row {
+    height: 35.5rem;
+    grid-column: unset;
+  }
 }
