@@ -69,9 +69,6 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
-
-  /* Does NOT work on Safari */
-  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -94,7 +91,6 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: repeat(1fr, 8); */
   gap: 1rem;
   padding: 1rem;
 }
@@ -280,53 +276,6 @@ body {
     overflow: hidden;
     padding: 0;
   }
-  /*
-  .large-box {
-    height: 45.4rem;
-    grid-row: span 2;
-  }
-  .small-box {
-    height: 22.2rem;
-  }
-  .all-row {
-    height: 22.2rem;
-    grid-column: span 2;
-  }
-
-  .name {
-    font-size: 8rem;
-  }
-  
-
-  .about-me,
-  .project {
-    font-size: 3rem;
-    gap: 1.6rem;
-  }
-
-  .header {
-    margin-bottom: 1rem;
-  }
-
-  .description {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-  }
-  .play-link-container {
-    font-size: 7.4rem;
-    align-self: center;
-    margin-top: 1rem;
-  }
-
-  .something-container,
-  .contact-container {
-    font-size: 7.4rem;
-    gap: 2.4rem;
-  }
-
-  .footer {
-    font-size: 3rem;
-  } */
 }
 
 /**************************/
