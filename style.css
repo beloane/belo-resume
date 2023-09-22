@@ -145,15 +145,14 @@ body {
 
 .something-container {
   font-size: 9.8rem;
-  gap: 3rem;
-
   color: #d1ae8e;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
+
+  gap: 3rem;
 }
 .something-contact-link {
+  display: inline-block;
   transition: all 0.2s;
 }
 .something-contact-link:hover,
@@ -274,6 +273,7 @@ body {
   }
   .container {
     grid-template-columns: 1fr;
+    /* overflow-x: hidden; */
   }
   .container-box {
     padding: 2rem;
@@ -295,5 +295,10 @@ body {
   .all-row {
     height: 35.5rem;
     grid-column: unset;
+  }
+
+  .something-container,
+  .contact-container {
+    gap: 1.2rem;
   }
 }
