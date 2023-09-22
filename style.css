@@ -11,45 +11,31 @@ Bold: 700
 
 - Line heights
 Default: 1
-Small: 1.05
-Medium: 1.2
-Paragraph default: 1.6
-Large: 1.8
+Paragraph default: 3.2
+
 
 - Letter spacing
--0.5px
-0.75px
+-0.35rem;
+ 0.04rem;
+
 
 --- 02 COLORS
 
-- Primary: #4A55A2
-- Tints:
-#dbddec
-#C5DFF8
-#A0BFE0
-#7895CB
+- Primary:
+#f2e9ea;
 
-- Shades: 
-#434d92
-#1e2241
+#d1ae8e;
 
-- Accents:
-- Greys
+#4d121a;
 
-#888
-#767676 (lightest grey allowed on #fff)
-#6f6f6f (lightest grey allowed on #fdf2e9)
-#555
-#333
+#e5e4d8;
 
---- 05 SHADOWS
+#801e2b;
 
-0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 --- 06 BORDER-RADIUS
 
-Default: 9px
-Medium: 11px
+80 60 40 rem
 
 --- 07 WHITESPACE
 
@@ -75,7 +61,6 @@ body {
   font-family: "Satoshi", "Inter", sans-serif;
   line-height: 1;
   font-weight: 400;
-  /* color: #efefe8; */
   color: #f2e9ea;
   background-color: black;
 }
