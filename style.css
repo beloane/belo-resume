@@ -245,7 +245,7 @@ body {
 }
 
 /**************************/
-/* BELOW 1200px (Landscape Tablets) */
+/* BELOW 1200px (Tablets) */
 /**************************/
 
 @media (max-width: 75em) {
@@ -264,7 +264,7 @@ body {
 }
 
 /**************************/
-/* BELOW 644px (Tablets) */
+/* BELOW 644px (mobile) */
 /**************************/
 
 @media (max-width: 40.25em) {
@@ -278,6 +278,7 @@ body {
   .container-box {
     padding: 2rem;
     border-radius: 4rem;
+    /* width: 100vw; */
   }
   .picture {
     overflow: hidden;
