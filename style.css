@@ -69,43 +69,43 @@ body {
 
 /* ///// Load Animation ///// */
 .small-box {
-  animation: fadeInSections 1s ease-out;
+  animation: fadeInSections 0.75s;
   animation-fill-mode: backwards;
 }
 .picture {
-  animation: moveInSections 1s ease-out 0.25s;
+  animation: moveInSections 0.75s 0.15s;
   animation-fill-mode: backwards;
 }
 .about-me {
-  animation: moveInSections 1s ease-out 0.5s;
+  animation: moveInSections 0.75s 0.3s;
   animation-fill-mode: backwards;
 }
 .something {
-  animation: moveInSections 1s ease-out 0.75s;
+  animation: moveInSections 0.75s 0.45s;
   animation-fill-mode: backwards;
 }
 
 .all-row {
-  animation: moveInSections 1s ease-out 1s;
+  animation: moveInSections 0.75s 0.6s;
   animation-fill-mode: backwards;
 }
 .project {
-  animation: moveInSections 1s ease-out 1.25s;
+  animation: moveInSections 0.75s 0.75s;
   animation-fill-mode: backwards;
 }
 .contact {
-  animation: moveInSections 1s ease-out 1.5s;
+  animation: moveInSections 0.75s 0.9s;
   animation-fill-mode: backwards;
 }
 .footer {
-  animation: moveInSections 1s ease-out 1.75s;
+  animation: moveInSections 0.75s 1.05s;
   animation-fill-mode: backwards;
 }
 
 @keyframes moveInSections {
   0% {
     opacity: 0;
-    transform: translateY(25rem);
+    transform: translateY(15rem);
   }
 
   100% {
